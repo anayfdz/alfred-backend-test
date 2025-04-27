@@ -49,7 +49,14 @@ Este proyecto implementa una API REST con Django REST Framework para asignar ser
     { "token": "<tu_token_de_autenticacion>" }
     ```
 
-4.  **Acceder a la API (con Autenticación):**
+4.  **Explorar la API con Swagger / ReDoc:**
+    Una vez que la aplicación está corriendo, puedes explorar la documentación interactiva de la API generada automáticamente:
+    *   **Swagger UI:** `http://localhost:8000/swagger/`
+    *   **ReDoc UI:** `http://localhost:8000/redoc/`
+
+    Puedes probar los endpoints directamente desde estas interfaces. Para endpoints que requieren autenticación, busca el botón "Authorize" e introduce tu token precedido por `Token ` (ej: `Token <tu_token_de_autenticacion>`).
+
+5.  **Acceder a la API (con Autenticación):**
     Incluye el token obtenido en la cabecera (header) `Authorization` para todas las peticiones subsiguientes a los endpoints de la API.
 
     Ejemplo usando `curl` para listar conductores:
@@ -67,7 +74,7 @@ Este proyecto implementa una API REST con Django REST Framework para asignar ser
     *   **Completar Servicio (PATCH):** `http://localhost:8000/api/services/<id_servicio>/complete/`
         *   Cuerpo (JSON): `{ "status": "COMPLETED" }`
 
-5.  **Detener los servicios:**
+6.  **Detener los servicios:**
     Presiona `Ctrl+C` en la terminal donde `docker-compose up` se está ejecutando, luego ejecuta:
     ```bash
     docker-compose down
