@@ -1,4 +1,4 @@
-# Alfred Backend Test - API de Servicio de Domicilios
+# API de Servicio de Domicilios
 
 Este proyecto implementa una API REST con Django REST Framework para asignar servicios de domicilio al conductor disponible más cercano.
 
@@ -24,7 +24,7 @@ Este proyecto implementa una API REST con Django REST Framework para asignar ser
 1.  **Clonar el repositorio:**
     ```bash
     git clone <url_repositorio>
-    cd alfred-backend-test
+    cd delivery-api
     ```
 
 2.  **Construir y Ejecutar con Docker Compose:**
